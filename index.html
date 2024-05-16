@@ -22,14 +22,27 @@
   <body>
     <section id="hero" class="p-3 mx-auto text-center text-white hero w-100 h-100 d-flex justify-content-center align-items-center">
       <main>
-        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h4>
+          Kepada <br /><br />
+          <span>Bapak/Ibu/Saudara/i,</span>
+
+          <!-- //Box -->
+          <!-- <div class="card text-center">
+            <div class="card-header">Kepada</div>
+            <div class="card-body">
+              <span>Bapak/Ibu/Saudara/i,</span>
+            </div>
+          </div> -->
+        </h4>
+
         <h1>Shandika & Nova</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam:</p>
         <div class="simply-countdown"></div>
-        <a href="#undangan" class="mt-4 btn btn-lg">Lihat Undangan</a>
+        <a href="#home" class="mt-4 btn btn-lg" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
 
+    <!-- bootstrap offcanvas navbar -->
     <nav class="bg-transparent navbar navbar-expand-md sticky-top mynavbar">
       <div class="container">
         <a class="navbar-brand" href="#">Rust</a>
@@ -44,11 +57,11 @@
           <div class="offcanvas-body">
             <div class="navbar-nav ms-auto">
               <a class="nav-link" href="#home">Home</a>
-              <a class="nav-link" href="info">Info</a>
-              <a class="nav-link" href="story">Story</a>
-              <a class="nav-link" href="gallery">Gallery</a>
-              <a class="nav-link" href="rspv">RSPV</a>
-              <a class="nav-link" href="gift">Gift</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rspv">RSPV</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
         </div>
@@ -116,6 +129,17 @@
               Alamat : Lido Lakes Resort <br />
               Jl. Raya Bogor - Sukabumi No.KM. 21, Watesjaya, Kec. Cigombong, Kabupaten Bogor, Jawa Barat
             </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.2028743279893!2d106.80759239999999!3d-6.7450925999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f4304a0a97d1%3A0x4f2bcc2012a335f9!2sLido%20Lake%20Resort%20by%20MNC%20Hotel!5e0!3m2!1sid!2sid!4v1715742511221!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
             <a href="https://maps.app.goo.gl/U2prXSVsGv4BeGdW6" target="-blank" class="my-3 btn btn-light btn-sm">Klik Untuk membuka peta</a>
             <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal atau salah tempat.</p>
           </div>
@@ -164,7 +188,240 @@
       </div>
     </section>
 
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-center col-md-8 col-10">
+            <span>Bagaiamana Cinta kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore odio quae nostrum sint quis voluptatibus.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(img/timeline-1.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>1 Juni 2000</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea natus ab sed quasi adipisci?</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(img/timeline-2.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>1 Juni 2005</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque omnis aperiam repudiandae aliquam nisi sequi animi magni vitae?</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image" style="background-image: url(img/timeline-3.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>1 Juni 2003</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quae quo hic nobis molestias! Sequi a numquam tempore ut reprehenderit?</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-center col-md-8 col-10">
+            <span>Memori Kisah Kami</span>
+            <h2>Kisah Kami</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore odio quae nostrum sint quis voluptatibus.</p>
+          </div>
+        </div>
+
+        <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a href="img/gallery/gallery-1.jpg" data-toggle="lightbox" data-caption="Image 1" data-gallery="example-gallery">
+              <img src="img/gallery/thumbnail/gallery-1.jpg" alt="thumbnail" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery-2.jpg" data-toggle="lightbox" data-caption="Image 2" data-gallery="example-gallery">
+              <img src="img/gallery/thumbnail/gallery-2.jpg" alt="thumbnail" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery-3.jpg" data-toggle="lightbox" data-caption="Image 3" data-gallery="example-gallery">
+              <img src="img/gallery/thumbnail/gallery-3.jpg" alt="thumbnail" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery-4.jpg" data-toggle="lightbox" data-caption="Image 4" data-gallery="example-gallery">
+              <img src="img/gallery/thumbnail/gallery-4.jpg" alt="thumbnail" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery-5.jpg" data-toggle="lightbox" data-caption="Image 5" data-gallery="example-gallery">
+              <img src="img/gallery/thumbnail/gallery-5.jpg" alt="thumbnail" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/gallery/gallery-6.jpg" data-toggle="lightbox" data-caption="Image 6" data-gallery="example-gallery">
+              <img src="img/gallery/thumbnail/gallery-6.jpg" alt="thumbnail" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rspv" class="rspv">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-center col-md-8 col-10">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi Form untuk konfirmasi kehadiran</p>
+          </div>
+        </div>
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbyO3TqXppeX1tG09cRQGrWN7XpPY5ksS3tcgyiEXuD6r72_0eqC0UFQ7TiWPNQ9HcI5sA/exec" id="my-form">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" lenght="1" value="1" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+
+        <!-- menngunakan layana disqus.com -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6">
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement('script');
+                s.src = 'https://rustwedding.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="text-center col-md-8 col-10">
+            <span>Ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore odio quae nostrum sint quis voluptatibus.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                12334556 - NAME
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">Mandiri</div>
+                12334556 - NAME
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">Saweria</div>
+                <img src="img/qr-code.png" alt="QR Code" class="img-thumbnail" width="150" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col text-center">
+          <small class="block">&copy; 2024 Wedding. All Rights Reserved.</small>
+          <small class="block">Design by <a href="https://instagram.com/iyusrustandi2">@iyusrustandi1</a></small>
+
+          <ul class="mt-3">
+            <li>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-tiktok"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- audio -->
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/05 Ungu Suara Hati.mp3" type="audio/mp3" />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script>
       simplyCountdown('.simply-countdown', {
         year: 2024, // required
@@ -181,6 +438,109 @@
           seconds: {singular: 'detik', plural: 'detik'},
         },
       });
+    </script>
+
+    <!-- script untuk bug jika pada mode tablet atau smartphone layar di slide ke kiri muncul halaman blank putih (layar sisa) -->
+    <script>
+      const stickyTop = document.querySelector('sticky-top');
+      const offcanvas = document.querySelector('.offcanvas');
+
+      offcanvas.addEventListener('show.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'visible';
+      });
+
+      offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'hidden';
+      });
+    </script>
+
+    <!-- disable scroll & song-->
+    <script>
+      const rootElement = document.querySelector(':root');
+      const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+      const audioIcon = document.querySelector('.audio-icon-wrapper i ');
+      const song = document.querySelector('#song');
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageYOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = 'auto';
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = 'smooth';
+        // localStorage.setItem('opened', 'true');
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.15;
+        audioIconWrapper.style.display = 'flex';
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove('bi-disc');
+          audioIcon.classList.add('bi-pause-circle');
+        } else {
+          song.play();
+          audioIcon.classList.add('bi-disc');
+          audioIcon.classList.remove('bi-pause-circle');
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem('opened')) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+
+    <!-- form kehadiran dan alert -->
+    <!-- script juga digunakan saat setelah klik kirim tidak dialihkan ke halaman script google user -->
+    <script>
+      window.addEventListener('load', function () {
+        const form = document.getElementById('my-form');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          }).then(() => {
+            alert('Konfirmasi Kehadiran Berhasil');
+          });
+        });
+      });
+    </script>
+
+    <!-- nama undangan di URL -->
+    <!-- di url setelah .html di tambahkan "?p=Bpk&kepada=(isi nama tamu undangan)" -->
+    <!-- Bpk bisa di ganti sesuai pronoun tamu undangan apakah Bpk, Ibu, Saudara/Saudari -->
+    <!--untuk mencantumkan nama undangan lebih dari satu "?p=Bpk&kepada=Jokowi+dan+Ibu+Iriana" -->
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      // 'kepada' bisa di ganti sesuai keinginan
+      const nama = urlParams.get('kepada') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+      const namaContainer = document.querySelector('.hero h4 span');
+
+      namaContainer.innerText = `${pronoun} ${nama}`.replace(/ ,$/, ',');
+
+      // nama akan otomatis masuk ke form rspv
+      document.querySelector('#nama').value = nama;
     </script>
   </body>
 </html>

@@ -1,0 +1,25 @@
+form google sheets linked
+- create new file
+- heading same with html name="#"
+- on google sheets clik Extensions => Apps Script => rename on "untitled project to google sheets file name (same name with google sheets)"
+- search on google search html form to google sheets github (example: https://github.com/levinunnink/html-form-to-google-sheet)
+- ikuti instruksi
+- setelah  copy kode ke html 
+    method="POST" 
+    action="YOUR_WEBAPP_URL" 
+- ganti "YOUR_WEBAPP_URL" dengan web app URL yang muncul dari hasil new deployment pada saat setting triger
+
+membuat layanan chat dengan disqus.com
+-pada profil pilih "install on site"
+- buat nama website 
+- category pilih living
+- klik create site- pilih yang free (subsrcibe now)
+- untuk platform pilih "i don't see my ...."
+- copy kode pada box "place the following code"
+
+ <div class="card text-center">
+            <div class="card-header">Kepada</div>
+            <div class="card-body">
+              <span>Bapak/Ibu/Saudara/i,</span>
+            </div>
+          </div>
